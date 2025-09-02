@@ -60,9 +60,15 @@ git stash: lets you save your uncommitted changes and return to a clean working 
 
 git log: Show full commit history
 git log --oneline: Show a summary of commits
-git show <commit>: Show details of a specific commit
+git show <commit>: Show details of a specific commit (git show 14c9)
 git diff: See unstaged changes
 git diff --staged: See staged changes
+
+git help <command>: See the manual page for a command
+git <command> --help: See help for a command (same as above)
+git <command> -h: See a quick summary of options
+git help --all: List all possible Git commands
+git help -g: List guides and concepts
 
 ### KEY CONCEPTS ###
 Repository: A folder where Git tracks your project and its history.
