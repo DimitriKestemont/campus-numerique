@@ -58,6 +58,12 @@ git push origin --delete tag v1.0: delete a tag from the remote repository
 
 git stash: lets you save your uncommitted changes and return to a clean working directory.
 
+git log: Show full commit history
+git log --oneline: Show a summary of commits
+git show <commit>: Show details of a specific commit
+git diff: See unstaged changes
+git diff --staged: See staged changes
+
 ### KEY CONCEPTS ###
 Repository: A folder where Git tracks your project and its history.
 Clone: Make a copy of a remote repository on your computer.
