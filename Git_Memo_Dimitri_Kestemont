@@ -1,5 +1,6 @@
 ### KEY COMMANDS BY DIMITRI KESTEMONT ###
 
+### GIT ###
 brew install git: install command for mac.
 brew upgrade git: keep Git up to date for the latest features and security fixes (mac).
 git --version / git -v : verifies which version of git is installed.
@@ -70,6 +71,23 @@ git <command> -h: See a quick summary of options
 git help --all: List all possible Git commands
 git help -g: List guides and concepts
 
+git branch: see all branches in your repository
+checkout: command used to check out a branch (git checkout hello-world-image)
+git checkout -b dev: create new branch 
+
+git merge: Merge a branch into your current branch
+git merge --no-ff: Always create a merge commit
+git merge --squash: Combine changes into a single commit
+git merge --abort: Abort a merge in progress
+
+git restore <file>: Undo changes in your working directory (before staging).
+git restore --staged <file>: Unstage a file (move it out of the Staging Area).
+git reset HEAD~: Undo your last commit (keeps changes in your working directory).
+git commit --amend: Change the last commit message or add files to your last commit.
+
+git rm --cached <file>: removes file from repository
+.gitignore: to prevent tracking of build artifacts, logs, and secrets
+
 ### KEY CONCEPTS ###
 Repository: A folder where Git tracks your project and its history.
 Clone: Make a copy of a remote repository on your computer.
@@ -80,3 +98,14 @@ Merge: Combine changes from different branches.
 Pull: Get the latest changes from a remote repository.
 Push: Send your changes to a remote repository.
 
+### GITHUB ###
+ssh-keygen: Generate a new SSH key pair
+ssh-add: Add your private key to the SSH agent
+ssh -T git@github.com: Test SSH connection
+ssh-add -l: List loaded SSH keys
+ssh-add -d: Remove a key from agent (ssh-add -d ~/.ssh/id_rsa)
+
+eval $(ssh-agent -s): enable SSH agent
+ssh-keygen -t rsa -b 4096 -C "your@email.com": generate SSH Key
+ssh-add ~/.ssh/id_rsa: add Key to SSH agent
+pbcopy < ~/.ssh/id_rsa.pub: copy public key

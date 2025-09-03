@@ -19,6 +19,7 @@ Developers can revert to earlier versions of a project.
 Git is not the same as GitHub.
 GitHub makes tools that use Git.
 GitHub is the largest host of source code in the world, and has been owned by Microsoft since 2018.
+GitHub is a popular platform for hosting remote repositories, enabling you to collaborate with others and back up your code.
 
 1. Git
 C’est un logiciel de gestion de version (version control system).
@@ -40,3 +41,5 @@ Git avec GitHub : tu envoies ton dépôt Git sur GitHub, et tu peux travailler a
 👉 En résumé :
 Git = l’outil
 GitHub = le service en ligne qui héberge et enrichit Git
+
+### SSH --> cat ~/.ssh/id_rsa.pub ###
