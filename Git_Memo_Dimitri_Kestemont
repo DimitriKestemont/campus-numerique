@@ -109,3 +109,5 @@ eval $(ssh-agent -s): enable SSH agent
 ssh-keygen -t rsa -b 4096 -C "your@email.com": generate SSH Key
 ssh-add ~/.ssh/id_rsa: add Key to SSH agent
 pbcopy < ~/.ssh/id_rsa.pub: copy public key
+
+git fetch: downloads new data from a remote repository, but does not change your working files or branches. It lets you see what others have pushed before you merge or pull.
