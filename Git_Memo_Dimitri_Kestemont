@@ -85,7 +85,9 @@ git restore --staged <file>: Unstage a file (move it out of the Staging Area).
 git reset HEAD~: Undo your last commit (keeps changes in your working directory).
 git commit --amend: Change the last commit message or add files to your last commit.
 
-git rm --cached <file>: removes file from repository
+git rm <file>: removes single file
+git rm -r <GIT_pandas-examples>: removes a directory recursively (all files inside).
+git rm --cached <file>: removes file from the staging area (the index), but keep the file on your computer.
 .gitignore: to prevent tracking of build artifacts, logs, and secrets
 
 ### KEY CONCEPTS ###
@@ -111,3 +113,5 @@ ssh-add ~/.ssh/id_rsa: add Key to SSH agent
 pbcopy < ~/.ssh/id_rsa.pub: copy public key
 
 git fetch: downloads new data from a remote repository, but does not change your working files or branches. It lets you see what others have pushed before you merge or pull.
+git remote -v: shows the GitHub repo that it is connected to
+
