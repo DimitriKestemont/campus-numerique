@@ -114,4 +114,5 @@ pbcopy < ~/.ssh/id_rsa.pub: copy public key
 
 git fetch: downloads new data from a remote repository, but does not change your working files or branches. It lets you see what others have pushed before you merge or pull.
 git remote -v: shows the GitHub repo that it is connected to
+git remote set-url origin git@github.com:DimitriKestemont/campus-numerique.git: sets remote to SSH if it is set to HTTPS   
 
